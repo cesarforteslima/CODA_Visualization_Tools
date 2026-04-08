@@ -1,7 +1,7 @@
 # CODA_Visualization_Tools
 New tools for Compositional Data Analysis (CoDA) to visualize ADMIXTURE results.
 #
-#### Script:
+#### CODA Script:
 DB=HGDP-1KGP
 for K in {2..10}; do echo K${K}; \
 python CODA_bokeh_script.py --input_file ${DB}.${K}.Q.txt --output ${DB} \
