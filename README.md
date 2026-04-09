@@ -1,8 +1,8 @@
 # CODA_Visualization_Tools
-New tools for Compositional Data Analysis (CoDA) to visualize ADMIXTURE results absed on the combined HGDP (Human Genome Diversity Project) + 1kGP (1000 Genomes Project) data.
+New tools for Compositional Data Analysis (CoDA) to visualize ADMIXTURE results absed on the combined HGDP (Human Genome Diversity Project) + 1kGP (1000 Genomes Project Phase 3) data.
 #
 #### CODA Script:
-DB=HGDP-1KGP; \
+DB=HGDP-1KGP \
 for K in {2..10}; do echo K${K}; \
 python CODA_bokeh_script.py --input_file ${DB}.${K}.Q.txt --output ${DB} \
 --plot_title "HGDP-1KGP WGS dataset" --pattern_file hgdp_tgp_pattern.csv \
@@ -31,7 +31,7 @@ python CODA_bokeh_script.py --input_file ${DB}.${K}.Q.txt --output ${DB} \
 Inputs were kindly shared by Alicia Martin (Broad Institute, MIT and Harvard, USA) and Zan Koenig (Brown University).\
 The combined HGDP-1KGP dataset was presented in:
 
-***A harmonized public resource of deeply sequenced diverse human genomes***. ; \ Koenig Z, Yohannes MT, Nkambule LL, Zhao X, Goodrich JK, Kim HA, Wilson MW, Tiao G, Hao SP, Sahakian N, Chao KR, Walker MA, Lyu Y; gnomAD Project Consortium; Rehm HL, Neale BM, Talkowski ME, Daly MJ, Brand H, Karczewski KJ, Atkinson EG, Martin AR. Genome Research 2024 34(5):796-809. doi: 10.1101/gr.278378.123 (https://www.genome.org/cgi/doi/10.1101/gr.278378.123)
+***A harmonized public resource of deeply sequenced diverse human genomes***. Koenig Z, Yohannes MT, Nkambule LL, Zhao X, Goodrich JK, Kim HA, Wilson MW, Tiao G, Hao SP, Sahakian N, Chao KR, Walker MA, Lyu Y; gnomAD Project Consortium; Rehm HL, Neale BM, Talkowski ME, Daly MJ, Brand H, Karczewski KJ, Atkinson EG, Martin AR. Genome Research 2024 34(5):796-809. doi: 10.1101/gr.278378.123 (https://www.genome.org/cgi/doi/10.1101/gr.278378.123)
 
 
 
