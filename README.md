@@ -4,8 +4,8 @@ New tools for Compositional Data Analysis (CoDA) to visualize ADMIXTURE results 
 #### CODA Script:
 DB=HGDP-1KGP; \
 for K in {2..10}; do echo K${K}; \
-python CODA_bokeh_script.py --input_file ${DB}.${K}.Q.txt --output ${DB} \
---plot_title "HGDP-1KGP WGS dataset" --pattern_file hgdp_tgp_pattern.csv \
+python CODA_bokeh_script.py --input_file Inputs/${DB}.${K}.Q.txt --output CODA_Plots/${DB} \
+--plot_title "HGDP-1KGP WGS dataset" --pattern_file Inputs/hgdp_tgp_pattern.csv \
 --plot_height 700 --n_columns 3 --grid_lines --shaded_areas --centroid --save_plot svg ; done
 #
 ## Outputs
